@@ -1,0 +1,9 @@
+Color Options:
+red/grey/black https://www.colorhunt.co/palette/3038413a4750d72323eeeeee
+cyan/grey/black https://www.colorhunt.co/palette/222831393e4600adb5eeeeee
+blues https://www.colorhunt.co/palette/14285027496d0c7b9300a8cc
+
+
+
+images:
+https://www.pexels.com/
