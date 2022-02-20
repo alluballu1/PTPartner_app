@@ -32,7 +32,7 @@ const PTAppBar = () => {
     setAnchorElUser(null);
   };
   return (
-    <AppBar position="static">
+    <AppBar sx={{background:"#222831"}} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

@@ -6,8 +6,10 @@ import AppBar from './Components/AppBar'
 export default function Home() {
   return (
     <>
+     <div style={{position:"fixed", width:"100%"}}>
+     <AppBar/>
+     </div>
       
-      <AppBar/>
       <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
