@@ -14,7 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 const PTAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const pages = ["Customers", "", "Blog"];
+  const pages = ["Customers",  "Blog"];
   const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
   const handleOpenNavMenu = (event) => {
@@ -32,7 +32,7 @@ const PTAppBar = () => {
     setAnchorElUser(null);
   };
   return (
-    <AppBar sx={{background:"#222831"}} position="static">
+    <AppBar sx={{background:"#222831"}} position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
