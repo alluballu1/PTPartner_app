@@ -10,12 +10,12 @@ import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import {GiStairsGoal} from "react-icons/gi"
 const PTAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const pages = ["Customers",  "Blog"];
-  const settings = ["Profile", "Account", "Dashboard", "Logout"];
+  const pages = ["My Progress",  "Goals History"];
+  const settings = ["Logout"];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -32,7 +32,7 @@ const PTAppBar = () => {
     setAnchorElUser(null);
   };
   return (
-    <AppBar sx={{background:"#222831"}} position="fixed">
+    <AppBar sx={{background:"#222831"}} position="relative">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -41,7 +41,8 @@ const PTAppBar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            LOGO
+            <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+            <GiStairsGoal size={40}/>Goalie </div>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -86,7 +87,7 @@ const PTAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            LOGO
+            <GiStairsGoal size={20}/>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
