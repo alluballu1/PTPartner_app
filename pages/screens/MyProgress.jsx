@@ -4,11 +4,12 @@ import Link from "next/link";
 
 const MyProgress = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
       <Box
         sx={{ background: "rgb(0,0,0, 0.2)", height: "100vh", width: "100%" }}
       >
-        <ul>
+        <div style={{paddingTop:60}}>
+                  <ul>
           <li>
             <Link href="/">
               <a>Home</a>
@@ -25,6 +26,8 @@ const MyProgress = () => {
             </Link>
           </li>
         </ul>
+        </div>
+
       </Box>
     </div>
   );
