@@ -14,7 +14,7 @@ import {GiStairsGoal} from "react-icons/gi"
 const PTAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const pages = ["My Progress",  "Goals History"];
+  const pages = ["My Goals",  "Completed Goals"];
   const settings = ["Logout"];
 
   const handleOpenNavMenu = (event) => {

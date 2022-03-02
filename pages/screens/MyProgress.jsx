@@ -3,31 +3,19 @@ import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 
 const MyProgress = () => {
+  const tempData = [1, 2, 3, 4, 5];
   return (
-    <div className={styles.container} >
+    <div className={styles.container}>
       <Box
-        sx={{ background: "rgb(0,0,0, 0.2)", height: "100vh", width: "100%" }}
+        sx={{ background: "rgb(0,0,0, 0.2)", height: "fit-content", width: "100%" }}
       >
-        <div style={{paddingTop:60}}>
-                  <ul>
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <a>About Us</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog/hello-world">
-              <a>Blog Post</a>
-            </Link>
-          </li>
-        </ul>
+        <div
+          id={styles.goalBoxContainer}
+        >
+          {tempData.map((element, index) => {
+            return <div id={styles.goalBox} key={index}>{element}</div>;
+          })}
         </div>
-
       </Box>
     </div>
   );
