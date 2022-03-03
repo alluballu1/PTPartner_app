@@ -3,6 +3,22 @@ import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 
 const MyProgress = () => {
+  const secondTempData = [{
+    goal: 100,
+    current: 50,
+    title: "Learn 100 new Spanish words"
+    
+  },{
+    goal: 100,
+    current: 52,
+    title: "Learn 100 new Finnish words"
+    
+  },{
+    goal: 100,
+    current: 10,
+    title: "Learn 100 new Swedish words"
+    
+  },]
   const tempData = [1, 2, 3, 4, 5];
   return (
     <div className={styles.container}>
@@ -12,8 +28,8 @@ const MyProgress = () => {
         <div
           id={styles.goalBoxContainer}
         >
-          {tempData.map((element, index) => {
-            return <div id={styles.goalBox} key={index}>{element}</div>;
+          {secondTempData.map((element, index) => {
+            return <div id={styles.goalBox} key={index}><div>{element.title}</div> {element.current}/{element.goal} </div>;
           })}
         </div>
       </Box>

@@ -19,11 +19,12 @@
   width: 500px;
   background: #00ADB5;
   margin: 10px;
-  height: 400px;
+  height: fit-content;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #goalBox:hover{
   box-shadow: black 0px 0px 20px 1px ;
