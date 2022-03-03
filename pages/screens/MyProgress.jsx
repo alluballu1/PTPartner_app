@@ -19,7 +19,6 @@ const MyProgress = () => {
     title: "Learn 100 new Swedish words"
     
   },]
-  const tempData = [1, 2, 3, 4, 5];
   return (
     <div className={styles.container}>
       <Box
