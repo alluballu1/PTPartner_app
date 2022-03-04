@@ -1,14 +1,17 @@
 import { Box } from "@mui/material";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
+import ProgressBar from "../Components/ProgressBar";
 
 const MyProgress = () => {
   const secondTempData = [{
+    type:"goal",
     goal: 100,
     current: 50,
     title: "Learn 100 new Spanish words"
     
-  },{
+  }, {
+    type:"no-goal",
     goal: 100,
     current: 52,
     title: "Learn 100 new Finnish words"
@@ -28,7 +31,7 @@ const MyProgress = () => {
           id={styles.goalBoxContainer}
         >
           {secondTempData.map((element, index) => {
-            return <div id={styles.goalBox} key={index}><div>{element.title}</div> {element.current}/{element.goal} </div>;
+            return <div id={styles.goalBox} key={index}><div>{element.title}</div> <ProgressBar/> {element.current}/{element.goal} </div>;
           })}
         </div>
       </Box>
